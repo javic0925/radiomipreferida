@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+        <meta name="description" content="Radio Mi Preferida con los mejores éxitos, Innovamos para ti, disfruta de nuestra programación, bienvenido a nuestra gran familia Radio Mi Preferida.">
+        <meta name="author" content="Radio Mi Preferida">
+        <meta property="og:title" content="Radio Mi Preferida">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://radiomipreferida.com/">
+        <meta property="og:description" content="Radio Mi Preferida con los mejores éxitos, Innovamos para ti, disfruta de nuestra programación, bienvenido a nuestra gran familia Radio Mi Preferida.">
+        <meta property="og:image" content="">
+        <meta name="theme-color" content="#12263B">    
+    <title>Radio Mi Preferida</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="./assets/Icons/apple-touch-icon.png">
+    <link rel="shortcut icon" href="./assets/Icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="./js/player.js"></script>
+   <!--<script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('./service-worker.js').then(function (registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>-->
+</head> 
+
+<body>
+    
+    <section class="tab" id="main">
+        
+        <div class="header">
+            <a href="https://mipreferida.com"><img id="logo" src="/assets/images/RMPLogo.png" alt="Radio Mi Preferida Logo"></a>
+            <img class="share-button" src="./assets/Icons/iconmonstr-share-1.svg" alt="">
+        </div>
+
+        <div class="streamInfo">
+            <div id="track">
+                <img class="streaminfo" src="./assets/images/RMPAC.png"/> 
+            </div>
+
+            <div class="songinf">
+            <h3 href="http://91.121.121.25/tunein/mipreferida.pls" class="cc_streaminfo" data-type="song" data-username="mipreferida">Loading ...</h3>
+            <h5>Radio Mi Preferida</h5>
+            <span class="cc_streaminfo" data-type="listeners" data-username="mipreferida"></span>
+
+            </div>
+
+        </div>
+        <div class="socialMedia">
+            <ul>
+                <li><a id="tg" href=""><img src="./assets/Icons/iconmonstr-telegram-3.svg" alt=""></a></li>
+                <li><a id="fb" href="#"><img src="./assets/Icons/iconmonstr-facebook-3.svg" alt=""></a></li>
+                <li><a id="ig" href="#"><img src="./assets/Icons/iconmonstr-instagram-13.svg" alt=""></a></li>
+                <li><a id="cb" href="#"><img src="./assets/Icons/iconmonstr-speech-bubble-19.svg" alt=""></a></li>
+            </ul>
+
+        </div>
+        <div class="player">
+            <div id="player">
+                <img id="playback" class="fa fa-play fa-lg" src="./assets/Icons/Play.svg" alt="">
+            </div>
+
+        </div>
+        
+            
+        
+        <audio preload="none">
+                <source id="sourceOgg" type="audio/ogg">
+                <source id="sourceMp3" type="audio/mpeg">
+        </audio>
+
+    </section>
+    
+    
+    <script language="javascript" type="text/javascript" src="http://91.121.121.25/system/streaminfo.js"></script>
+    <script src="./js/share.js"></script>
+    
+    
+
+</body>
+
+</html>
