@@ -2,14 +2,14 @@ $(function () {
     var song = document.getElementsByTagName('audio')[0],
         sourceMp3 = document.getElementsByTagName('audio')[0];
 
-    sourceMp3.src = 'http://91.121.121.25:8002/stream';
+    sourceMp3.src = 'https://c21.radioboss.fm:18026/stream';
 
 
     $('#player').click(function (e) {
         e.preventDefault();
         if (song.paused) song.play();
         else 
-        song.setAttribute('src' , 'http://91.121.121.25:8002/stream'); 
+        song.setAttribute('src' , 'https://c21.radioboss.fm:18026/stream'); 
     
     });
     $('#player').bind('click', function() {
@@ -20,7 +20,7 @@ $(function () {
     });
 
     song.addEventListener('pause', function () {
-        song.setAttribute('src' , 'http://91.121.121.25:8002/stream');
+        song.setAttribute('src' , 'https://c21.radioboss.fm:18026/stream');
         song.currentTime = 0;
         $('#playback').attr('src', './assets/Icons/Play.svg');
     });
